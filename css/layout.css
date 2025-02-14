@@ -5,21 +5,47 @@ body {
     background-color: #24252a;
     color: white
 }
+
 main {
     padding: 1rem;
     text-align: left;
 }
+
 .container {
     width: 80%;
     margin: 20px auto;
-    border: 2px solid red; /* debug box around the sections on the home page*/
+    border: 2px solid red;
+    /* debug box around the sections on the home page*/
 }
+
 .projects {
     padding: 1rem;
     text-align: left;
     margin-left: 5%;
     margin-right: 5%;
+    display: flex;
+    flex-wrap: wrap;
 }
+
+.column {
+    flex: 1;
+    padding: 10px;
+}
+
+.column h2 {
+    margin-top: 0;
+}
+.column h3 {
+    margin-top: 1rem;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 footer {
     text-align: center;
     padding: 10px;
@@ -29,6 +55,7 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
 .container section {
     text-align: center;
 }
