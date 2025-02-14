@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        fetch('head.html')
+            .then(response => response.text())
+            .then(data => {
+                document.head.innerHTML = data;
+
+                // Override or append additional elements
+                document.title = "About Dylan Le Voguer";
+                document.head.appendChild(metaDescription);
+            });
+    </script>
+</head>
+
+<body>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+    </nav>
+    <header>
+        <h1>Projects</h1>
+    </header>
+    <main>
+        
+    </main>
+    <div class="projects">
+        <section>
+            <h2>Grade 9</h2>
+            <ul>
+                <li>
+                    <h3>Mangonel Catapult</h3>
+                    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Massa quisque phasellus orci scelerisque sed rhoncus donec justo. Rhoncus et metus suscipit primis enim aliquet. Netus id ultrices pharetra phasellus non mus nam enim. Penatibus dictumst platea montes libero eros libero. Conubia fermentum consectetur fames elementum neque laoreet. Potenti dapibus pharetra libero etiam metus duis. Ridiculus blandit mi at libero euismod tempor sagittis tortor. Molestie cursus inceptos feugiat parturient justo aenean est. Velit felis feugiat, donec inceptos felis nec.</p>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Grade 11</h2>
+            <ul>
+                <li>
+                    <h3>Trebuchet</h3>
+                    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Ullamcorper commodo consequat ultrices pharetra vel lacinia amet. Pulvinar accumsan donec mollis; etiam tristique suscipit. Et elementum gravida cursus justo, tincidunt leo ligula. Aptent facilisi lacus diam quam consectetur porttitor dictumst aliquam. Pulvinar consectetur tristique litora vivamus euismod fringilla.</p>
+                </li>
+                <li>
+                    <h3>Sumo Robot</h3>
+                    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Congue nisl fringilla suspendisse sem fames neque finibus odio sapien. Auctor eu commodo felis convallis mus accumsan. Venenatis netus cursus ante tincidunt facilisis sagittis. Aneque porta lacinia; vehicula justo elit. Lobortis ridiculus pretium lectus mauris morbi adipiscing. Magnis nam ligula aliquet eleifend egestas leo. Dictum cras curabitur semper conubia congue vestibulum accumsan quisque.</p>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Grade 12</h2>
+            <ul>
+                <li>
+                    <h3>Marble Run</h3>
+                    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Lacinia tempor pulvinar erat; pretium morbi consequat dolor bibendum. Ut suscipit pharetra accumsan vivamus sodales; facilisi pretium eu. Suscipit euismod aliquet varius mi proin. Varius pellentesque quis integer eget scelerisque montes lorem dui. Sapien parturient ut; aptent facilisis bibendum dapibus. Luctus himenaeos sagittis nam venenatis varius nam vestibulum placerat. Bibendum semper laoreet tortor ad fames.</p>
+                </li>
+                <li>
+                    <h3>Hydraulic Ballista</h3>
+                    <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Natoque ridiculus est senectus varius ullamcorper penatibus pharetra. Euismod efficitur conubia ut donec odio natoque. Facilisis aliquet habitasse felis tempor natoque. Massa montes maximus natoque, fames eros diam tempor fames. Erat lacinia in praesent accumsan dictum nec. Habitasse varius vestibulum dolor duis augue nec litora hendrerit egestas.</p>
+                </li>
+                
+            </ul>
+        </section>
+    </div>
+    <div style="height: 25vh"></div>
+    <footer>
+        <p>&copy; 2025 Dylan</p>
+    </footer>
+    <script src="../js/cursor.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script>
+            fetch('head.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.head.innerHTML = data;
+    
+                    // Override or append additional elements
+                    document.title = "About Dylan Le Voguer";
+                    document.head.appendChild(metaDescription);
+                });
+        </script>
+    </head>
+<body>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+    </nav>
+    <header>
+        <h1>About</h1>
+    </header>
+    <main>
+        <h2>Dylan Le Voguer</h2>
+        <p>Information about Dylan.</p>
+    </main>
+    <footer>
+        <p>&copy; 2025 Dylan Le Voguer</p>
+    </footer>
+</body>
+<script src="../js/cursor.js"></script>
+</html>
