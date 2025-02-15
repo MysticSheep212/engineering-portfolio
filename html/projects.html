@@ -1,32 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <script>
-        fetch('head.html')
-            .then(response => response.text())
-            .then(data => {
-                document.head.innerHTML = data;
-
-                // Override or append additional elements
-                document.title = "About Dylan Le Voguer";
-                document.head.appendChild(metaDescription);
-            });
-    </script>
-</head>
-
 <body>
     <nav>
         <a href="../index.html">Home</a>
         <a href="about.html">About</a>
         <a href="projects.html">Projects</a>
     </nav>
-    <header>
+    <subheader>
         <h1>Projects</h1>
-    </header>
+    </subheader>
     <main>
         <div class="projects">
-            <div class="column">
+            <div class="grade-project">
                 <h2>Grade 9</h2>
                 <h3>Mangonel Catapult</h3>
                 <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Massa quisque phasellus orci scelerisque
@@ -37,7 +22,7 @@
                     cursus inceptos feugiat parturient justo aenean est. Velit felis feugiat, donec inceptos
                     felis nec.</p>
             </div>
-            <div class="column">
+            <div class="grade-project">
                 <h2>Grade 11</h2>
                 <h3>Trebuchet</h3>
                 <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Ullamcorper commodo consequat ultrices
@@ -51,7 +36,9 @@
                     cursus ante tincidunt facilisis sagittis. Aneque porta lacinia; vehicula justo elit. Lobortis
                     ridiculus pretium lectus mauris morbi adipiscing. Magnis nam ligula aliquet eleifend egestas
                     leo. Dictum cras curabitur semper conubia congue vestibulum accumsan quisque.</p>
-                <h2>Grade 12</h2>
+            </div>
+            <div class="grade-project">
+                    <h2>Grade 12</h2>
                 <h3>Marble Run</h3>
                 <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Lacinia tempor pulvinar erat; pretium
                     morbi consequat dolor bibendum. Ut suscipit pharetra accumsan vivamus sodales; facilisi pretium
@@ -73,6 +60,7 @@
         <p>&copy; 2025 Dylan Le Voguer</p>
     </footer>
     <script src="../js/cursor.js"></script>
+    <script src="../js/loadHead.js"></script>
 </body>
 
 </html>

@@ -14,7 +14,7 @@ main {
 .container {
     width: 80%;
     margin: 20px auto;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     /* debug box around the sections on the home page*/
 }
 
@@ -27,9 +27,27 @@ main {
     flex-wrap: wrap;
 }
 
-.column {
+.grade-project {
+    border-radius: 1rem;
+    width: 100%;
+    border: 1px ;
+    margin: 0.5rem;
     flex: 1;
     padding: 10px;
+    flex-wrap: wrap;
+    min-width: 30rem;
+    max-width: 50%;
+    background-color: #35373c31;
+    transition: all 0.3s ease; /* Add transition for smooth effect */
+}
+
+.grade-project:hover {
+    flex-grow: 2; /* Adjust this value as needed */
+    background-color: #35373c;
+    min-height: 30rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add box shadow */
+    transform: scale(1.05); /* Slightly scale up */
+    cursor: pointer; /* Change cursor to pointer */
 }
 
 .column h2 {
@@ -47,13 +65,16 @@ main {
 }
 
 footer {
-    text-align: center;
-    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
     background-color: #333;
     color: white;
     position: fixed;
     width: 100%;
     bottom: 0;
+    height: 3vh
 }
 
 .container section {
