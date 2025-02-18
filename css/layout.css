@@ -25,6 +25,7 @@ main {
     margin-right: 5%;
     display: flex;
     flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .grade-project {
@@ -42,12 +43,22 @@ main {
 }
 
 .grade-project:hover {
-    flex-grow: 2; /* Adjust this value as needed */
+    flex-grow: 1000; /* Adjust this value as needed */
     background-color: #35373c;
-    min-height: 30rem;
+    max-width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add box shadow */
     transform: scale(1.05); /* Slightly scale up */
     cursor: pointer; /* Change cursor to pointer */
+}
+
+.grade-project:hover ~ .grade-project {
+    flex-grow: 1;
+}
+@media (max-width: 768px) {
+    .grade-project {
+        flex-grow: 1; /* Adjust for mobile */
+        min-width: 100% 
+    }
 }
 
 .column h2 {
