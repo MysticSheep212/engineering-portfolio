@@ -29,6 +29,7 @@ main {
 }
 
 .grade-project {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,19 +39,23 @@ main {
     border: 1px ;
     margin: 0.5rem;
     flex: 1;
-    padding: 10px;
+    min-width: 30%;
+    max-width: 100%;
+    padding: 1rem;
     flex-wrap: wrap;
     min-width: 30rem;
     max-width: 50%;
     background-color: #35373c31;
-    transition: all 0.3s ease; /* Add transition for smooth effect */
+    transition: all 0.3s ease; /*Add transition for smooth effect */
+    color: inherit;
+    text-decoration: none;
 }
 .grade-project img {
     width: 50%;
     margin: 1rem 0;
 }
 .grade-project:hover {
-    flex-grow: 1000; /* Adjust this value as needed */
+    flex-grow: 3; /* Adjust this value as needed */
     background-color: #35373c;
     max-width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add box shadow */
