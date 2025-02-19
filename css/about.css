@@ -1,0 +1,35 @@
+.about-me {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    background-color: #414349;
+    width: 60%;
+    border-radius: 1rem;
+}
+
+.about-me h2 {
+    text-align: center;
+    flex-basis: 100%;
+}
+
+.about-me-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.about-me ul {
+    padding: 1rem;
+    margin-left: 0;
+    margin: 0.5rem 0;
+    border-radius: 1rem;
+    background-color: #414349;
+    flex: 1;
+}
+
+.about-me-pictures {
+    padding: 5rem;
+    width: 25%;
+    align-self: flex-end;
+    border-radius: 5.5rem;
+}
