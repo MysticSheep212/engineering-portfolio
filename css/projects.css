@@ -25,8 +25,8 @@
 }
 
 .project-section h3 {
- width: 200px;
- flex-shrink: 0;
+    width: 200px;
+    flex-shrink: 0;
 }
 
 .project-section ul,
@@ -37,9 +37,11 @@
     border-radius: 1rem;
     background-color: #414349;
 }
+
 .project-section li {
     list-style-type: none;
 }
+
 .project-section li p {
     margin-left: 4rem;
 }
@@ -54,7 +56,7 @@
         width: 100%;
         align-self: center;
     }
-    
+
     .project-description {
         width: 100%;
     }
