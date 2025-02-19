@@ -10,6 +10,7 @@ nav {
     top: 5px;
     right: 0;
     padding: 10px;
+    padding-right: 16px;
 }
 
 nav a {
@@ -28,7 +29,7 @@ nav a:hover {
 
 header {
     position: relative;
-    height: 92vh;
+    height: 96vh;
     width: 100%;
     text-align: center;
     display: flex;
