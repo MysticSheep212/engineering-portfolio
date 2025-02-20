@@ -6,29 +6,30 @@
     width: 95%;
     border-radius: 1rem;
     margin-top: 1rem;
-    align-items: center;
+    align-items: flex-start; /* Align items to the start */
     flex-wrap: wrap;
-
+    
 }
 
 .project-description {
     padding: 1rem;
     text-align: left;
-    flex: 1;
+    flex: 1 1 75%; /* Allow the description to grow and shrink */
     width: 75%;
 }
 
 .project-pictures {
     padding: 1rem;
+    flex: 1 1 25%; /* Allow the pictures to grow and shrink */
     width: 25%;
-    align-self: flex-end;
-    border-radius: 1.5rem;
+    align-self: flex-start; /* Align to the start */
     display: flex;
-    flex-wrap: flex;
-}
-.project-pictures img {
-    width: 100%;
+    flex-wrap: wrap; /* Ensure images wrap */
+    min-height: 500px;
+    max-height: 600px ; /* Set a maximum height for all images */
     margin-bottom: 1rem;
+    object-fit: contain; /* Ensure images maintain their aspect ratio */
+    
 }
 
 .project-section h3 {
@@ -56,16 +57,16 @@
 @media (max-width: 768px) {
     .project-section {
         flex-direction: column;
-        width: 100%
+        width: 97%;
     }
 
     .project-pictures {
-        width: 100%;
+        width: 95%;
         align-self: center;
     }
 
     .project-description {
-        width: 100%;
+        width: 95%;
     }
 
     .project-section h3 {
