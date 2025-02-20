@@ -1,7 +1,7 @@
 .project-section {
     display: flex;
     flex-direction: row;
-    background-color: #35373c;
+    background-color: #44444475;
     color: white;
     width: 95%;
     border-radius: 1rem;
@@ -35,7 +35,7 @@
     margin-left: 0;
     margin: 0.5rem 0;
     border-radius: 1rem;
-    background-color: #414349;
+    background-color: #44444480;
 }
 
 .project-section li {

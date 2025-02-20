@@ -2,7 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #24252a;
+    background-color: #333;
     color: white
 }
 
@@ -45,7 +45,7 @@ main {
     flex-wrap: wrap;
     min-width: 30rem;
     max-width: 50%;
-    background-color: #35373c31;
+    background-color: #44444475;
     transition: all 0.3s ease;
     /*Add transition for smooth effect */
     color: inherit;
@@ -60,7 +60,7 @@ main {
 .grade-project:hover {
     flex-grow: 3;
     /* Adjust this value as needed */
-    background-color: #35373c;
+    background-color: #444;
     max-width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     /* Add box shadow */
@@ -97,18 +97,6 @@ main {
     clear: both;
 }
 
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-    background-color: #333;
-    color: white;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    height: 3vh
-}
 
 .container section {
     text-align: center;

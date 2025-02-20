@@ -1,29 +1,28 @@
-.about-me {
+.about {
     display: flex;
     flex-direction: column;
     margin-top: 1rem;
-    background-color: #414349;
+    background-color: #44444475;
     width: 60%;
     border-radius: 1rem;
 }
 
-.about-me h2 {
+.about h2 {
     text-align: center;
     flex-basis: 100%;
 }
 
-.about-me-content {
+.about-content {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-.about-me ul {
+.about ul {
     padding: 1rem;
     margin-left: 0;
     margin: 0.5rem 0;
     border-radius: 1rem;
-    background-color: #414349;
     flex: 1;
 }
 
@@ -32,4 +31,27 @@
     width: 25%;
     align-self: flex-end;
     border-radius: 5.5rem;
+}
+
+.text-and-picture {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.text-and-picture .text {
+    flex: 2;
+    padding-right: 1rem;
+}
+
+.text-and-picture .picture {
+    flex: 1;
+    max-width: 50%;
+}
+
+.text-and-picture .picture img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
 }
