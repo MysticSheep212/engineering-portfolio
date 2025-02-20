@@ -1,3 +1,6 @@
+/* imported from codepen 
+The cursor.css files does have some code done by me but this does not.*/
+
 let start = new Date().getTime();
 
 const originPosition = { x: 0, y: 0 };
