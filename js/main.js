@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // Makes the about button scroll the about to the middle of the screen.
     const scrollToAbout = (event) => {
         event.preventDefault();
         const target = document.querySelector('#about');
@@ -25,5 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('nav a[href="#about"]').addEventListener('click', scrollToAbout);
     document.querySelector('a[href="#about"]').addEventListener('click', scrollToAbout);
     document.querySelector('a[href="../index.html#about"]').addEventListener('click', scrollToAbout);
+
 });
 

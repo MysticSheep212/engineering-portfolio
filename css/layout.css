@@ -9,13 +9,12 @@ body {
 main {
     padding: 1rem;
     text-align: left;
+    width: 95%;
 }
 
 .container {
     width: 80%;
     margin: 20px auto;
-    /* border: 2px solid red; */
-    /* debug box around the sections on the home page*/
 }
 
 .projects {

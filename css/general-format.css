@@ -3,10 +3,9 @@
     flex-direction: column;
     margin: 1rem;
     background-color: #44444475;
-    width: 60%;
+    padding: 1rem;
     border-radius: 1rem;
 }
-
 
 .about h2 {
     text-align: center;
