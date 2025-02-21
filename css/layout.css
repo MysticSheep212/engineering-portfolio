@@ -25,6 +25,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+    justify-content: center;
 }
 
 .grade-project {
@@ -97,17 +98,13 @@ main {
         /* Adjust for mobile */
         min-width: 100%;
         max-width: 100%;
-    }
 
-    .projects {
-        justify-content: center;
-        margin: 1%
     }
 }
 
 @media (min-width: 769px) {
     .grade_project {
-        flex-grow: auto; 
+        flex-grow: auto;
         min-width: 30rem;
         max-width: 50%;
     }
