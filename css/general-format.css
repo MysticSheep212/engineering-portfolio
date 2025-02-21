@@ -1,11 +1,12 @@
 .about {
     display: flex;
     flex-direction: column;
-    margin-top: 1rem;
+    margin: 1rem;
     background-color: #44444475;
     width: 60%;
     border-radius: 1rem;
 }
+
 
 .about h2 {
     text-align: center;
@@ -30,7 +31,7 @@
     padding: 5rem;
     width: 25%;
     align-self: flex-end;
-    border-radius: 5.5rem;
+    border-radius: 1rem;
 }
 
 .text-and-picture {
@@ -54,4 +55,19 @@
     width: 100%;
     height: auto;
     border-radius: 1rem;
+}
+
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        width: unset;
+        padding: 1rem;
+        align-items: center;
+        margin-top: 8px;
+    }
+
+    .about-content {
+        margin: 5%;
+
+    }
 }
