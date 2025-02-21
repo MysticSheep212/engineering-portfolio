@@ -19,7 +19,6 @@ main {
 }
 
 .projects {
-    padding: 1rem;
     text-align: left;
     margin-left: 5%;
     margin-right: 5%;
@@ -39,12 +38,8 @@ main {
     border: 1px;
     margin: 0.5rem;
     flex: 1;
-    min-width: 30%;
-    max-width: 100%;
     padding: 1rem;
     flex-wrap: wrap;
-    min-width: 30rem;
-    max-width: 50%;
     background-color: #44444475;
     transition: all 0.3s ease;
     /*Add transition for smooth effect */
@@ -63,12 +58,8 @@ main {
     border: 1px;
     margin: 0.5rem;
     flex: 1;
-    min-width: 30%;
-    max-width: 100%;
     padding: 1rem;
     flex-wrap: wrap;
-    min-width: 30rem;
-    max-width: 50%;
     background-color: #44444475;
     transition: all 0.3s ease;
     /*Add transition for smooth effect */
@@ -104,7 +95,21 @@ main {
     .grade-project {
         flex-grow: auto;
         /* Adjust for mobile */
-        min-width: 100%
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .projects {
+        justify-content: center;
+        margin: 1%
+    }
+}
+
+@media (min-width: 769px) {
+    .grade_project {
+        flex-grow: auto; 
+        min-width: 30rem;
+        max-width: 50%;
     }
 }
 
