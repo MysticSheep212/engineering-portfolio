@@ -68,8 +68,8 @@ main {
     visibility: hidden;
 }
 
-.grade-project img {
-    width: 50%;
+.grade-project img, video {
+    width: 100%;
     margin: 1rem 0;
 }
 
