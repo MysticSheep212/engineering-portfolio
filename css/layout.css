@@ -27,87 +27,62 @@ main {
     justify-content: center;
 }
 
-.grade-project {
-    box-sizing: border-box;
+/* Parallax Effect */
+.parallax {
+    position: relative;
+    width: 100%;
+    height: 110vh;
+    /* Full screen height */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* This is the key for parallax */
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    border-radius: 1rem;
-    width: 100%;
-    border: 1px;
-    margin: 0.5rem;
-    flex: 1;
-    padding: 1rem;
-    flex-wrap: wrap;
-    background-color: #44444475;
-    transition: all 0.3s ease;
-    /*Add transition for smooth effect */
-    color: inherit;
-    text-decoration: none;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
-.invisible-grade-project {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    border-radius: 1rem;
-    width: 100%;
-    border: 1px;
-    margin: 0.5rem;
-    flex: 1;
-    padding: 1rem;
-    flex-wrap: wrap;
-    background-color: #44444475;
-    transition: all 0.3s ease;
-    /*Add transition for smooth effect */
-    color: inherit;
-    text-decoration: none;
-    visibility: hidden;
+/* Assigning Different Background Images */
+#img1 {
+    background-image: url('/images/grade11/sumobot.jpeg');
 }
 
-.grade-project img, video {
-    width: 100%;
-    margin: 1rem 0;
+#img2 {
+    background-image: url('/images/grade12/hydraulicgearbot.jpg');
 }
 
-.grade-project:hover {
-    flex-grow: 3;
-    /* Adjust this value as needed */
-    background-color: #444;
-    max-width: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* Add box shadow */
-    transform: scale(1.05);
-    /* Slightly scale up */
-    cursor: pointer;
-    /* Change cursor to pointer */
-    margin-top: 2rem;
+#img3 {
+    background-image: url('/images/grade10/house_render.png');
 }
 
-.grade-project:hover~.grade-project {
-    flex-grow: 1;
+#img4 {
+    background-image: url('image4.jpg');
 }
 
-@media (max-width: 768px) {
-    .grade-project {
-        flex-grow: auto;
-        /* Adjust for mobile */
-        min-width: 100%;
-        max-width: 100%;
-
-    }
+#img5 {
+    background-image: url('image5.jpg');
 }
 
-@media (min-width: 769px) {
-    .grade_project {
-        flex-grow: auto;
-        min-width: 30rem;
-        max-width: 50%;
-    }
+/* Caption Styling */
+.caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
 }
+
+/* Text Sections */
+.text-section {
+    padding: 50px 20px;
+    background: white;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #333;
+}
+
 
 .column h2 {
     margin-top: 0;
