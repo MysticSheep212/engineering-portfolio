@@ -17,48 +17,7 @@
 }
 
 .project-description {
-  padding: 1rem;
-  text-align: left;
-  flex: 1 1 65%;
-  width: 65%;
-}
-
-.project-pictures {
-  padding: 1rem;
-  flex: 1 1 35%;
-  width: 35%;
-  align-self: flex-start; /* Align to the start */
-  display: flex;
-  flex-wrap: wrap; /* Ensure images wrap */
-  min-height: 500px;
-  max-height: 600px; /* Set a maximum height for all images */
-  margin-bottom: 1rem;
-  object-fit: contain; /* Ensure images maintain their aspect ratio */
-}
-
-.project-section h3 {
-  width: 100%;
-  flex-shrink: 0;
-  justify-self: center;
-  margin-left: 2rem;
-  padding-bottom: 0rem;
-}
-
-.project-section ul,
-.project-section ol {
-  padding: 1rem;
-  margin-left: 0;
-  margin: 0.5rem 0;
-  border-radius: 1rem;
-  background-color: #44444480;
-}
-
-.project-section li {
-  list-style-type: none;
-}
-
-.project-section li p {
-  margin-left: 4rem;
+  font-size: 1.5rem;
 }
 
 @media (max-width: 768px) {

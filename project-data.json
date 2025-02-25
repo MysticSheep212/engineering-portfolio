@@ -16,6 +16,55 @@
         "title": "Sumobot",
         "description": "Created a Sumobot out of metal and a gearbox...",
         "image": "../images/grade11/sumobot.jpeg"
+    },
+    {
+        "id":"trebuchet",
+        "title":"Trebuchet",
+        "description":"Created a Trebuchet out of wood to launch around 6 feet",
+        "image":"../images/grade11/trebuchet.jpg"
+    },
+    {
+        "id":"drafting-apartment",
+        "title":"500 Square Foot Apartment",
+        "description":"Created a dream apartment with a maximum square footage of 500",
+        "image":"../images/grade11/dream_apartment_render.png"
+    },
+    {
+        "id":"rotating-calendar",
+        "title":"Rotating Calendar",
+        "description":"Created a calendar that uses multiple cogs to change the date showing it in a nice layout",
+        "image":"../images/grade11/rotating_calendar.jpg"
+    },
+    {
+        "id":"phone-holder",
+        "title":"Phone Holder",
+        "description":"Created as phone holder to that uses magsafe to charge your phone simultaneously",
+        "image":"../images/grade11/phone_holder.jpg"
+    },
+    {
+        "id":"hotel-packaging",
+        "title":"Hotel Packaging",
+        "description":"Created a prototype of a toiletries holder for a hotel",
+        "image":"../images/grade11/hotel_packaging.jpg"
+    },
+    {
+        "id":"lamp",
+        "title":"Lamp Model",
+        "description":"Modeled an original lamp in Fusion360",
+        "image":"../images/grade10/lamp_plans"
+    },
+    {
+        "id":"house",
+        "title":"House Model",
+        "description":"Modeled a house in Fusion360 with a detailed exterior and rooftop patio",
+        "image":"../images/grade10/house_render.png"
+    },
+    {
+        "id":"desk",
+        "title":"Desk",
+        "description":"Modeled a house in Fusion 360 with a detailed exterior and rooftop patio",
+        "image":"../images/grade10/desk_picture.png"
     }
+    
     
 ]
