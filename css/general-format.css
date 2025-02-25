@@ -1,96 +1,93 @@
 .about {
-    display: flex;
-    flex-direction: column;
-    margin: 1rem;
-    background-color: #44444475;
-    padding: 1rem;
-    border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  background-color: #44444475;
+  padding: 1rem;
+  border-radius: 1rem;
 }
 
 .about h2 {
-    text-align: center;
-    flex-basis: 100%;
-    align-items: first baseline;
+  text-align: center;
+  flex-basis: 100%;
+  align-items: first baseline;
 }
 
 .about-content {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .about ul {
-    padding: 1rem;
-    margin-left: 0;
-    margin: 0.5rem 0;
-    border-radius: 1rem;
-    flex: 1;
+  padding: 1rem;
+  margin-left: 0;
+  margin: 0.5rem 0;
+  border-radius: 1rem;
+  flex: 1;
 }
 
 .about-pictures {
-    column-count: 2; /* Adjust number of columns */
-    column-gap: 1rem;
+  column-count: 2; /* Adjust number of columns */
+  column-gap: 1rem;
 }
 
 .about-pictures img {
-    width: 100%; /* Makes images fill column width */
-    display: block;
-    margin-bottom: 1rem; /* Adds spacing between images */
+  width: 100%; /* Makes images fill column width */
+  display: block;
+  margin-bottom: 1rem; /* Adds spacing between images */
 }
 
-
-
 .about-me-pictures {
-    padding: 5rem;
-    width: 25%;
-    align-self: flex-end;
-    border-radius: 1rem;
+  padding: 5rem;
+  width: 25%;
+  align-self: flex-end;
+  border-radius: 1rem;
 }
 
 .text-and-picture {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
 }
 
 .text-and-picture .text {
-    flex: 2;
-    padding-right: 1rem;
+  flex: 2;
+  padding-right: 1rem;
 }
 
 .text-and-picture .picture {
-    flex: 1;
-    max-width: 50%;
+  flex: 1;
+  max-width: 50%;
 }
 
 .text-and-picture .logo {
-    max-width: 33%;
+  max-width: 33%;
 }
 
 .text-and-picture .picture img {
-    width: 100%;
-    height: auto;
-    border-radius: 1rem;
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
 }
 .text-and-picture .logo img {
-    max-width: 50%;
-    min-height: 8rem;
-    max-height: 8rem;
-    max-width: 8rem;
-    min-width: 8rem;
+  max-width: 50%;
+  min-height: 8rem;
+  max-height: 8rem;
+  max-width: 8rem;
+  min-width: 8rem;
 }
 
 @media (max-width: 768px) {
-    .about {
-        flex-direction: column;
-        width: unset;
-        padding: 1rem;
-        align-items: center;
-        margin-top: 8px;
-    }
+  .about {
+    flex-direction: column;
+    width: unset;
+    padding: 1rem;
+    align-items: center;
+    margin-top: 8px;
+  }
 
-    .about-content {
-        margin: 5%;
-
-    }
+  .about-content {
+    margin: 5%;
+  }
 }
