@@ -48,15 +48,15 @@ main {
 
 /* Assigning Different Background Images */
 #img1 {
-    background-image: url('/images/grade11/sumobot.jpeg');
+    background-image: url("../images/grade11/sumobot.jpeg");
 }
 
 #img2 {
-    background-image: url('/images/grade12/hydraulic_gearbot_wide.png');
+    background-image: url('../images/grade12/hydraulic_gearbot_wide.png');
 }
 
 #img3 {
-    background-image: url('/images/grade10/house_render_wide.png');
+    background-image: url('../images/grade10/house_render_wide.png');
 }
 
 #img4 {
