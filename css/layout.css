@@ -38,33 +38,52 @@ main {
   background-attachment: fixed;
   /* This is the key for parallax */
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   color: white;
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
+  cursor: pointer;
 }
 
+/* Dark overlay */
+.parallax::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Adjust opacity for darkness */
+  z-index: 1; /* Ensures it overlays the background */
+}
+
+/* Ensures text remains visible above the overlay */
+.parallax * {
+  position: relative;
+  z-index: 2;
+}
 /* Assigning Different Background Images */
-#img1 {
+#home-img1 {
   background-image: url("../images/grade11/sumobot.jpeg");
 }
 
-#img2 {
+#home-img2 {
   background-image: url("../images/grade12/hydraulic_gearbot_wide.png");
 }
 
-#img3 {
+#home-img3 {
   background-image: url("../images/grade10/house_render_wide.png");
 }
 
-#img4 {
-  background-image: url("image4.jpg");
+#g12-img1 {
+  background-image: url("../images/grade12/hydraulic_gearbot_wide.png");
 }
 
-#img5 {
-  background-image: url("image5.jpg");
+#g12-img2 {
+  background-image: url("../images/grade12/marblerun.jpg");
 }
 
 /* Caption Styling */

@@ -1,16 +1,16 @@
 .about {
+  background-color: #44444475;
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
   margin: 1rem;
-  background-color: #44444475;
   padding: 1rem;
-  border-radius: 1rem;
 }
 
 .about h2 {
-  text-align: center;
-  flex-basis: 100%;
   align-items: first baseline;
+  flex-basis: 100%;
+  text-align: center;
 }
 
 .about-content {
@@ -33,9 +33,9 @@
 }
 
 .about-pictures img {
-  width: 100%; /* Makes images fill column width */
   display: block;
   margin-bottom: 1rem; /* Adds spacing between images */
+  width: 100%; /* Makes images fill column width */
 }
 
 .about-me-pictures {
@@ -80,11 +80,11 @@
 
 @media (max-width: 768px) {
   .about {
-    flex-direction: column;
-    width: unset;
-    padding: 1rem;
     align-items: center;
+    flex-direction: column;
     margin-top: 8px;
+    padding: 1rem;
+    width: unset;
   }
 
   .about-content {

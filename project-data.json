@@ -1,0 +1,21 @@
+[
+    {
+        "id": "ballista",
+        "title": "Hydraulic Ballista",
+        "description": "This is a project where we built a hydraulic-powered ballista...",
+        "image": "../images/ballista.jpg"
+    },
+    {
+        "id": "marble-run",
+        "title": "Marble Run",
+        "description": "We created a complex marble run using various engineering techniques...",
+        "image": "../images/marble-run.jpg"
+    },
+    {
+        "id": "solar-panel",
+        "title": "Solar Panel Project",
+        "description": "Developed a solar panel system to harness renewable energy...",
+        "image": "../images/solar-panel.jpg"
+    }
+    
+]

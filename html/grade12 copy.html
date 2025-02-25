@@ -15,114 +15,30 @@
       <a href="projects.html">Projects</a>
       <a href="about-me.html" class="name-top-right">Dylan Le Voguer</a>
     </nav>
+
     <div class="subheader">
       <h1>Grade 12</h1>
     </div>
     <h2>Projects</h2>
 
-    <div class="project-section">
-      <h3>Hydraulic Ballista</h3>
-      <div class="project-description">
-        <ul>
-          <li>
-            Goal:
-            <p>
-              The goal of this project was to build a hydraulic-powered ballista
-              that can launch projectiles with precision and force.
-            </p>
-          </li>
-          <li>
-            Process:
-            <p>
-              The process involved researching hydraulic systems, designing the
-              ballista, and assembling the components. We conducted multiple
-              tests to optimize performance.
-            </p>
-          </li>
-          <li>
-            Paperwork:
-            <p>
-              Documentation included detailed schematics, a parts list, and a
-              comprehensive project report.
-            </p>
-          </li>
-        </ul>
+    <!-- Project list -->
+    <div class="project-section" id="projects-list">
+      <div class="parallax" id="g12-img1" data-project="ballista">
+        <h2>Hydraulic Ballista</h2>
+      </div>
+
+      <div class="parallax" id="g12-img2" data-project="marble-run">
+        <h2>Marble Run</h2>
       </div>
     </div>
-    <img
-      src="../images/grade12/hydraulicgearbot.jpg"
-      alt="pic of hydraulic ballista"
-      class="parallax"
-    />
-    <img
-      src="../images/grade12/hydraulic_gearbot_ACAD.jpg"
-      alt=""
-      class="project-pictures"
-    />
-    <img
-      src="../images/grade12/hydraulic_gearbot_material_list.png"
-      alt=""
-      class="project-pictures"
-    />
 
-    <div class="project-section">
-      <h3>Marble Run</h3>
-      <div class="project-description">
-        <ul>
-          <li>
-            Goal:
-            <p>
-              The goal of this project was to create a course for a marble that
-              took as much time as possible to complete.
-            </p>
-          </li>
-          <li>
-            Process:
-            <p>
-              The process involved designing unique segments for the marble to
-              run through, creating track to tie them all together, and
-              constructing the track. All while having it be able to be removed
-              from the board flawlessly. We also refined the course to ensure
-              consistent operation.
-            </p>
-          </li>
-          <li>
-            Paperwork:
-            <p>
-              Documentation included initial sketches, design drawings, a 3D
-              drawing and a material list.
-            </p>
-          </li>
-        </ul>
-      </div>
-      <img
-        src="../images/grade12/marblerun.jpg"
-        alt="pic of marble run"
-        class="project-pictures"
-      />
-      <img
-        src="../images/grade12/marble_run_material_list.png"
-        alt="marble run material list"
-        class="project-pictures"
-      />
-      <img
-        src="../images/grade12/marble_run_initial_sketches.png"
-        alt="marble run initial sketches"
-        class="project-pictures"
-      />
-      <img
-        src="../images/grade12/marble_run_final_sketch.png"
-        alt="marble run final sketch"
-        class="project-pictures"
-      />
-      <img
-        src="../images/grade12/marble_run_3d_sketch.png"
-        alt="marble run 3d sketch"
-        class="project-pictures"
-      />
+    <!-- Project details (Hidden initially) -->
+    <div id="project-details" style="display: none;">
+      <div id="project-content"></div>
     </div>
-
+    
     <script src="../js/cursor.js"></script>
     <script src="../js/main.js"></script>
+    <script src="../js/projects.js"></script>
   </body>
 </html>

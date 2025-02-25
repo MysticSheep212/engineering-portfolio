@@ -1,9 +1,14 @@
+/* Used for gradeXX.html */
+
+#projects-list {
+  pointer-events: auto;
+}
 .project-section {
   display: flex;
   flex-direction: row;
   background-color: #44444475;
   color: white;
-  width: 95%;
+  width: 100%;
   border-radius: 1rem;
   margin-top: 1rem;
   align-items: flex-start; /* Align items to the start */
@@ -14,14 +19,14 @@
 .project-description {
   padding: 1rem;
   text-align: left;
-  flex: 1 1 75%; /* Allow the description to grow and shrink */
-  width: 75%;
+  flex: 1 1 65%;
+  width: 65%;
 }
 
 .project-pictures {
   padding: 1rem;
-  flex: 1 1 25%; /* Allow the pictures to grow and shrink */
-  width: 25%;
+  flex: 1 1 35%;
+  width: 35%;
   align-self: flex-start; /* Align to the start */
   display: flex;
   flex-wrap: wrap; /* Ensure images wrap */
@@ -30,11 +35,6 @@
   margin-bottom: 1rem;
   object-fit: contain; /* Ensure images maintain their aspect ratio */
 }
-
-/* .project-pictures:hover {
-    transform: scale(1.8);
-    transition-delay: 1.5s;
-} */
 
 .project-section h3 {
   width: 100%;
