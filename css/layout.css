@@ -78,6 +78,37 @@ main {
   background-image: url("../images/grade10/house_render_wide.png");
 }
 
+#g10-img1 {
+  background-image: url("../images/grade10/lamp_plans.png");
+}
+
+#g10-img2 {
+  background-image: url("../images/grade10/house_render_wide.png");
+}
+
+#g10-img3 {
+  background-image: url("../images/grade10/desk_picture.png");
+}
+
+#g11-img1 {
+  background-image: url("../images/grade11/sumobot.jpeg");
+}
+#g11-img2 {
+  background-image: url("../images/grade11/trebuchet.jpg");
+}
+#g11-img3 {
+  background-image: url("../images/grade11/dream_apartment_render.png");
+}
+#g11-img4 {
+  background-image: url("../images/grade11/rotating-calendar.jpg");
+}
+#g11-img5 {
+  background-image: url("../images/grade11/phone-holder.jpg");
+}
+#g11-img6 {
+  background-image: url("../images/grade11/hotel-packaging.jpg");
+}
+
 #g12-img1 {
   background-image: url("../images/grade12/hydraulic_gearbot_wide.png");
 }

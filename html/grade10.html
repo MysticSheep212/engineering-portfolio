@@ -1,90 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <link rel="icon" href="../site_icon.png">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="icon" href="../site_icon.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dylan's Engineering Portfolio - Grade 10</title>
-    <link rel="stylesheet" href="../styles.css">
-</head>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
 
-<body>
+  <body>
     <nav>
-        <a href="../index.html">Home</a>
-        <a href="../index.html#about">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="about-me.html" class="name-top-right">Dylan Le Voguer</a>
+      <a href="../index.html">Home</a>
+      <a href="../index.html#about">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="about-me.html" class="name-top-right">Dylan Le Voguer</a>
     </nav>
     <div class="subheader">
-        <h1>Grade 10</h1>
+      <h1>Grade 10</h1>
     </div>
     <h2>Projects</h2>
 
-    <div class="project-section">
-        <h3>Lamp</h3>
-        <div class="project-description">
-            <ul>
-                <li>
-                    Goal:
-                    <p>The goal of this project was to...</p>
-                </li>
-                <li>
-                    Process:
-                    <p>The process involved...</p>
-                </li>
-                <li>
-                    Paperwork:
-                    <p>Documentation included...</p>
-                </li>
-            </ul>
-        </div>
-        <img src="../images/grade10/lamp_plans.png" alt="lamp plans" class="project-pictures">
-    </div>
-    <div class="project-section">
-        <h3>House</h3>
-        <div class="project-description">
-            <ul>
-                <li>
-                    Goal:
-                    <p>The goal of this project was to...</p>
-                </li>
-                <li>
-                    Process:
-                    <p>The process involved...</p>
-                </li>
-                <li>
-                    Paperwork:
-                    <p>Documentation included...</p>
-                </li>
-            </ul>
-        </div>
-        <img src="../images/grade10/house_render.png" alt="render of house model" class="project-pictures">
-        <img src="../images/grade10/house_plans.png" alt="house plans" class="project-pictures">
+    <!-- Project list -->
+    <div class="project-section" id="projects-list">
+      <div class="parallax" id="g10-img1" data-project="lamp">
+        <h2>Lamp Model</h2>
+      </div>
+
+      <div class="parallax" id="g10-img2" data-project="house">
+        <h2>House Model</h2>
+      </div>
+      <div class="parallax" id="g10-img3" data-project="desk">
+        <h2>Desk Model</h2>
+      </div>
     </div>
 
-    <div class="project-section">
-        <h3>Desk Model</h3>
-        <div class="project-description">
-            <ul>
-                <li>
-                    Goal:
-                    <p>The goal of this project was to...</p>
-                </li>
-                <li>
-                    Process:
-                    <p>The process involved...</p>
-                </li>
-                <li>
-                    Paperwork:
-                    <p>Documentation included...</p>
-                </li>
-            </ul>
-        </div>
-        <video autoplay src="../video/Dylan Le Voguer's Desk Project v24.mp4" type="video/mp4" class="project-pictures"></video>
+    <!-- Project details (Hidden initially) -->
+    <div id="project-details" style="display: none">
+      <div id="project-content"></div>
+    </div>
 
     <script src="../js/cursor.js"></script>
     <script src="../js/main.js"></script>
-</body>
-
+    <script src="../js/projects.js"></script>
+  </body>
 </html>
