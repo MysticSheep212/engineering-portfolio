@@ -17,16 +17,6 @@ main {
   margin: 20px auto;
 }
 
-.projects {
-  text-align: left;
-  margin-left: 5%;
-  margin-right: 5%;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-}
-
 /* Parallax Effect */
 .parallax {
   position: relative;

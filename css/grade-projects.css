@@ -18,6 +18,7 @@
   transition: all 0.3s ease;
   /*Add transition for smooth effect */
   width: 100%;
+  min-height: 400px;
 }
 
 .invisible-grade-project {
@@ -48,22 +49,18 @@ video {
 }
 
 .grade-project:hover {
-  flex-grow: 3;
-  /* Adjust this value as needed */
+  max-width: 35%;
   background-color: #444;
-  max-width: 100%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  /* Add box shadow */
-  transform: scale(1.05);
-  /* Slightly scale up */
+  transform: scaleX(1.50);
+  transform: translateY(-30px);
   cursor: pointer;
-  /* Change cursor to pointer */
   margin-top: 2rem;
 }
 
-.grade-project:hover ~ .grade-project {
+/* .grade-project:hover ~ .grade-project {
   flex-grow: 1;
-}
+} */
 
 @media (max-width: 768px) {
   .grade-project {

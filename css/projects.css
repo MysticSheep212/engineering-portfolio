@@ -1,5 +1,13 @@
 /* Used for gradeXX.html */
-
+.projects-per-grade {
+  /* edits the projects.html page */
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  text-align: left;
+}
 #projects-list {
   pointer-events: auto;
 }
