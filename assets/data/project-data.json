@@ -18,8 +18,8 @@
     ],
     "images": [
       "../assets/images/grade12/hydraulicgearbot.jpg",
-      "../assets/images/grade12/hydraulic_gearbot_ACAD.jpg",
-      "../assets/images/grade12/hydraulic_gearbot_material_list.png"
+      "../assets/images/grade12/hydraulic_gearbot_material_list.png",
+      "../assets/images/grade12/hydraulic_gearbot_ACAD.jpg"
     ]
   },
   {
@@ -28,7 +28,7 @@
     "description": [
       {
         "section": "Description",
-        "text": "A marble course that uses as many different types of motion as possible."
+        "text": "A marble course that uses many different types of motion"
       },
       {
         "section": "Goal",
