@@ -1,0 +1,32 @@
+.project-info {
+    background-color: rgba(var(--hover-color-rgb), 0.75); /* 75% opacity */
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.project-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Image container for projects */
+.project-info-pictures-container {
+    column-count: 2; /* Creates 3 columns */
+    column-gap: 1rem; /* Space between columns */
+    max-width: 100%;
+    margin: auto;
+    padding: 1rem; /* Optional: Adds space around the section */
+}
+
+.project-info-pictures img {
+    width: 100%; /* Makes images take full column width */
+    margin-bottom: 1rem; /* Ensures space between images */
+    border-radius: 0.5rem; /* Optional: Rounds corners */
+    display: block; /* Fixes gaps caused by inline-block images */
+}

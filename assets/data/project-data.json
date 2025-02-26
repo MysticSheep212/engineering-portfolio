@@ -1,70 +1,94 @@
 [
-    {
-        "id": "ballista",
-        "title": "Hydraulic Ballista",
-        "description": "This is a project where we built a hydraulic-powered ballista...",
-        "image": "../images/grade12/hydraulicgearbot.jpg"
-    },
-    {
-        "id": "marble-run",
-        "title": "Marble Run",
-        "description": "We created a complex marble run using various engineering techniques...",
-        "image": "../images/grade12/marblerun.jpg"
-    },
-    {
-        "id": "sumobot",
-        "title": "Sumobot",
-        "description": "A fighting robot made for a class competition",
-        "image": "../images/grade11/sumobot.jpeg"
-    },
-    {
-        "id":"trebuchet",
-        "title":"Trebuchet",
-        "description":"Created a Trebuchet out of wood to launch around 6 feet",
-        "image":"../images/grade11/trebuchet.jpg"
-    },
-    {
-        "id":"drafting-apartment",
-        "title":"500 Square Foot Apartment",
-        "description":"Created a dream apartment with a maximum square footage of 500",
-        "image":"../images/grade11/dream_apartment_render.png"
-    },
-    {
-        "id":"rotating-calendar",
-        "title":"Rotating Calendar",
-        "description":"Created a calendar that uses multiple cogs to change the date showing it in a nice layout",
-        "image":"../images/grade11/rotating_calendar.jpg"
-    },
-    {
-        "id":"phone-holder",
-        "title":"Phone Holder",
-        "description":"Created as phone holder to that uses magsafe to charge your phone simultaneously",
-        "image":"../images/grade11/phone_holder.jpg"
-    },
-    {
-        "id":"hotel-packaging",
-        "title":"Hotel Packaging",
-        "description":"Created a prototype of a toiletries holder for a hotel",
-        "image":"../images/grade11/hotel_packaging.jpg"
-    },
-    {
-        "id":"lamp",
-        "title":"Lamp Model",
-        "description":"Modeled an original lamp in Fusion360",
-        "image":"../images/grade10/lamp_plans"
-    },
-    {
-        "id":"house",
-        "title":"House Model",
-        "description":"Modeled a house in Fusion360 with a detailed exterior and rooftop patio",
-        "image":"../images/grade10/house_render.png"
-    },
-    {
-        "id":"desk",
-        "title":"Desk",
-        "description":"Modeled a house in Fusion 360 with a detailed exterior and rooftop patio",
-        "image":"../images/grade10/desk_picture.png"
-    }
-    
-    
+  {
+    "id": "ballista",
+    "title": "Hydraulic Ballista",
+    "description": "This is a project where we built a hydraulic-powered ballista...",
+    "images": [
+      "../assets/images/grade12/hydraulicgearbot.jpg",
+      "../assets/images/grade12/hydraulic_gearbot_ACAD.jpg",
+      "../assets/images/grade12/hydraulic_gearbot_material_list.png"
+    ]
+  },
+  {
+    "id": "marble-run",
+    "title": "Marble Run",
+    "description": "We created a complex marble run using various engineering techniques...",
+    "images": [
+      "../assets/images/grade12/marblerun.jpg",
+      "../assets/images/grade12/marble_run_3d_sketch.png",
+      "../assets/images/grade12/marble_run_final_sketch.png",
+      "../assets/images/grade12/marble_run_material_list.png",
+      "../assets/images/grade12/marble_run_initial_sketches.png"
+    ]
+  },
+  {
+    "id": "sumobot",
+    "title": "Sumobot",
+    "description": "A fighting robot made for a class competition",
+    "images": [
+      "../assets/images/grade11/sumobot.jpeg",
+      "../assets/images/grade11/sumobot_ACAD.png",
+      "../assets/images/grade11/sumobot_initial_sketches.png",
+      "../assets/images/grade11/sumobot_3d_final_sketch.png",
+      "../assets/images/grade11/sumobot_control_board_drawing.png"
+    ]
+  },
+  {
+    "id": "trebuchet",
+    "title": "Trebuchet",
+    "description": "Created a Trebuchet out of wood to launch around 6 feet",
+    "images": [
+      "../assets/images/grade11/trebuchet.jpg",
+      "../assets/images/grade11/trebuchet_final_drawing.png",
+      "../assets/images/grade11/trebuchet_initial_sketches.png"
+    ]
+  },
+  {
+    "id": "drafting-apartment",
+    "title": "500 Square Foot Apartment",
+    "description": "Created a dream apartment with a maximum square footage of 500",
+    "images": [
+      "../assets/images/grade11/dream_apartment_render.png",
+      "../assets/images/grade11/drafting12_apartment_floorplan.png"
+    ]
+  },
+  {
+    "id": "rotating-calendar",
+    "title": "Rotating Calendar",
+    "description": "Created a calendar that uses multiple cogs to change the date showing it in a nice layout",
+    "images": ["../assets/images/grade11/rotating_calendar.jpg"]
+  },
+  {
+    "id": "phone-holder",
+    "title": "Phone Holder",
+    "description": "Created as phone holder to that uses magsafe to charge your phone simultaneously",
+    "images": ["../assets/images/grade11/phone_holder.jpg"]
+  },
+  {
+    "id": "hotel-packaging",
+    "title": "Hotel Packaging",
+    "description": "Created a prototype of a toiletries holder for a hotel",
+    "images": ["../assets/images/grade11/hotel_packaging.jpg"]
+  },
+  {
+    "id": "lamp",
+    "title": "Lamp Model",
+    "description": "Modeled an original lamp in Fusion360",
+    "images": ["../assets/images/grade10/lamp_plans"]
+  },
+  {
+    "id": "house",
+    "title": "House Model",
+    "description": "Modeled a house in Fusion360 with a detailed exterior and rooftop patio",
+    "images": [
+      "../assets/images/grade10/house_render.png",
+      "../assets/images/grade10/house_plans.png"
+    ]
+  },
+  {
+    "id": "desk",
+    "title": "Desk",
+    "description": "Modeled a house in Fusion 360 with a detailed exterior and rooftop patio",
+    "images": ["../assets/images/grade10/desk_picture.png"]
+  }
 ]
