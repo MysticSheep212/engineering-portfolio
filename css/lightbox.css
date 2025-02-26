@@ -1,0 +1,32 @@
+.lightbox {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 9999; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    justify-content: center; /* Center content */
+    align-items: center; /* Center content */
+  }
+  
+  .lightbox:target {
+    display: flex; /* Show the lightbox when targeted */
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+  }
+  
+  .lightbox img {
+    max-width: 90%; /* Responsive image */
+    max-height: 90%; /* Responsive image */
+    margin: auto; /* Center image */
+    z-index: 10;
+  }
+  

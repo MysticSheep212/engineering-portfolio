@@ -1,5 +1,12 @@
 /* Used in projects.html */
-
+.projects-per-grade {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  text-align: left;
+}
 .grade-project {
   align-items: center;
   background-color: #44444475;
@@ -52,15 +59,11 @@ video {
   max-width: 35%;
   background-color: #444;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transform: scaleX(1.50);
+  transform: scaleX(1.5);
   transform: translateY(-30px);
   cursor: pointer;
   margin-top: 2rem;
 }
-
-/* .grade-project:hover ~ .grade-project {
-  flex-grow: 1;
-} */
 
 @media (max-width: 768px) {
   .grade-project {

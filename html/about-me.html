@@ -19,48 +19,97 @@
     <div class="subheader">
       <h1>Dylan Le Voguer</h1>
     </div>
+
     <main>
       <div class="about">
         <div class="about-content">
-          <ul>
-            <li class="text-and-picture">
-              <div class="text">
-                <h2>Experiences</h2>
-                <p></p>
+          <div class="skills">
+            <div class="skills-category">
+              <h2>Programming Languages</h2>
+              <p>Web Development: HTML, CSS</p>
+              <div class="skills-logos">
+                <img src="../images/logos/html5-logo.svg" alt="HTML5 Logo" />
+                <img src="../images/logos/css3-logo.svg" alt="CSS3 Logo" />
               </div>
-              <div class="picture">
-                <!-- Picture  -->
-                <img src="" alt="no picture yet" />
+              <p>Backend & General Programming: Java, Python</p>
+              <div class="skills-logos">
+                <img src="../images/logos/java-logo.svg" alt="Java Logo" />
+                <img src="../images/logos/python-logo.svg" alt="Python Logo" />
               </div>
-            </li>
-            <li class="text-and-picture">
-              <div class="text">
-                <h2>Skills and Technologies</h2>
-                <p>Java, Python, HTML, CSS</p>
-                <p>AutoCAD, Fusion 360, VSCode,</p>
-              </div>
-              <div class="logo">
-                <img src="../images/logos/java-logo.svg" alt="java logo" />
-                <img src="../images/logos/python-logo.svg" alt="python logo" />
-                <img src="../images/logos/html5-logo.svg" alt="html logo" />
-                <img src="../images/logos/css3-logo.svg" alt="css logo" />
+            </div>
+
+            <div class="skills-category">
+              <h2>Software & Tools</h2>
+              <p>AutoCAD, Fusion 360, VSCode</p>
+              <div class="skills-logos">
                 <img
-                  src="../images/logos/javascript-logo.svg"
-                  alt="javascript logo"
+                  src="../images/logos/autocad-logo.png"
+                  alt="AutoCAD Logo"
                 />
-                <img src="../images/logos/acad-logo.svg" alt="acad logo" />
+                <img
+                  src="../images/logos/fusion360-logo.png"
+                  alt="Fusion 360 Logo"
+                />
+                <img src="../images/logos/vscode-logo.svg" alt="VSCode Logo" />
               </div>
-            </li>
-            <li class="text-and-picture">Other text below</li>
-          </ul>
+            </div>
+          </div>
+
           <div class="about-pictures">
+            <a href="#img1">
+              <img
+                src="../images/grade11/engineering11_bonus_ACAD.png"
+                alt="Bonus ACAD Work Calipers"
+              />
+            </a>
+            <a href="#img2">
+              <img
+                src="../images/grade11/drafting12_floorplan.png"
+                alt="Class Floorplan Redesign"
+              />
+            </a>
+            <a href="#img3">
+              <img
+                src="../images/grade10/house_render.png"
+                alt="House Model Render"
+              />
+            </a>
+            <a href="#img4">
+              <img
+                src="../images/grade11/trebuchet_final_drawing.png"
+                alt="Trebuchet Final Drawing"
+              />
+            </a>
+          </div>
+
+          <!-- Lightbox Modals with Overlay -->
+          <div id="img1" class="lightbox">
+            <div class="overlay" onclick="location.href='#'"></div>
+            <!-- Close lightbox when clicked -->
             <img
               src="../images/grade11/engineering11_bonus_ACAD.png"
-              alt="bonus acad work calipers"
+              alt="Bonus ACAD Work Calipers"
             />
+          </div>
+          <div id="img2" class="lightbox">
+            <div class="overlay" onclick="location.href='#'"></div>
             <img
               src="../images/grade11/drafting12_floorplan.png"
-              alt="class floorplan redesign"
+              alt="Class Floorplan Redesign"
+            />
+          </div>
+          <div id="img3" class="lightbox">
+            <div class="overlay" onclick="location.href='#'"></div>
+            <img
+              src="../images/grade10/house_render.png"
+              alt="House Model Render"
+            />
+          </div>
+          <div id="img4" class="lightbox">
+            <div class="overlay" onclick="location.href='#'"></div>
+            <img
+              src="../images/grade11/trebuchet_final_drawing.png"
+              alt="Trebuchet Final Drawing"
             />
           </div>
         </div>
