@@ -1,6 +1,6 @@
 nav {
   width: 100%;
-  background-color: #333;
+  background-color: var(--background-color);
   overflow: hidden;
   position: fixed;
   top: 0;
@@ -28,12 +28,12 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #424242;
+  background-color: var(--hover-color);
   color: white;
 }
 
 nav.scrolled a:hover {
-  background-color: #33333325;
+  background-color: rgba(var(--hover-color-rgb), 0.25); /* 25% opacity of hover color*/
 }
 
 header {

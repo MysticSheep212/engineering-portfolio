@@ -1,6 +1,6 @@
 /* General about section styling */
 .about {
-  background-color: #44444475;
+  background-color: rgba(var(--hover-color-rgb), 0.75); /* 75% opacity */
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
