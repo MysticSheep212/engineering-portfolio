@@ -2,7 +2,20 @@
   {
     "id": "ballista",
     "title": "Hydraulic Ballista",
-    "description": "This is a project where we built a hydraulic-powered ballista...",
+    "description": [
+      {
+        "section": "Description",
+        "text": "A ballista that uses hydraulics to fire"
+      },
+      {
+        "section": "Goal",
+        "text": "To shoot over a miniature wall, and knock down pins"
+      },
+      {
+        "section": "Process",
+        "text": ""
+      }
+    ],
     "images": [
       "../assets/images/grade12/hydraulicgearbot.jpg",
       "../assets/images/grade12/hydraulic_gearbot_ACAD.jpg",
@@ -12,7 +25,20 @@
   {
     "id": "marble-run",
     "title": "Marble Run",
-    "description": "We created a complex marble run using various engineering techniques...",
+    "description": [
+      {
+        "section": "Description",
+        "text": "A marble course that uses as many different types of motion as possible."
+      },
+      {
+        "section": "Goal",
+        "text": "To have the marble take as long as possible to reach the bottom of the course while staying in motion the whole time."
+      },
+      {
+        "section": "Process",
+        "text": ""
+      }
+    ],
     "images": [
       "../assets/images/grade12/marblerun.jpg",
       "../assets/images/grade12/marble_run_3d_sketch.png",
@@ -24,7 +50,20 @@
   {
     "id": "sumobot",
     "title": "Sumobot",
-    "description": "A fighting robot made for a class competition",
+    "description": [
+      {
+        "section": "Description",
+        "text": "A metal battle bot."
+      },
+      {
+        "section": "Goal",
+        "text": "To be strong and designed well enough to push opponents out of the arena"
+      },
+      {
+        "section": "Process",
+        "text": ""
+      }
+    ],
     "images": [
       "../assets/images/grade11/sumobot.jpeg",
       "../assets/images/grade11/sumobot_ACAD.png",
@@ -36,7 +75,20 @@
   {
     "id": "trebuchet",
     "title": "Trebuchet",
-    "description": "Created a Trebuchet out of wood to launch around 6 feet",
+    "description": [
+      {
+        "section": "Description",
+        "text": "A wooden catapult that uses a counterweight to fire"
+      },
+      {
+        "section": "Goal",
+        "text": "To shoot over a miniature wall, and knock down pins"
+      },
+      {
+        "section": "Process",
+        "text": ""
+      }
+    ],
     "images": [
       "../assets/images/grade11/trebuchet.jpg",
       "../assets/images/grade11/trebuchet_final_drawing.png",
@@ -46,7 +98,20 @@
   {
     "id": "drafting-apartment",
     "title": "500 Square Foot Apartment",
-    "description": "Created a dream apartment with a maximum square footage of 500",
+    "description": [
+      {
+        "section": "Description",
+        "text": "The apartment layout of your dreams"
+      },
+      {
+        "section": "Goal",
+        "text": "To create the best possible apartment layout with the restriction of a maximum of 500 square feet."
+      },
+      {
+        "section": "Process",
+        "text": ""
+      }
+    ],
     "images": [
       "../assets/images/grade11/dream_apartment_render.png",
       "../assets/images/grade11/drafting12_apartment_floorplan.png"
@@ -55,31 +120,96 @@
   {
     "id": "rotating-calendar",
     "title": "Rotating Calendar",
-    "description": "Created a calendar that uses multiple cogs to change the date showing it in a nice layout",
+    "description": [
+      {
+        "section": "Description",
+        "text": "A calendar with rotating gears to change the date"
+      },
+      {
+        "section": "Goal",
+        "text": "To make a unique marketable product that functions well."
+      },
+      {
+        "section": "Process",
+        "text": ""
+      }
+    ],
     "images": ["../assets/images/grade11/rotating_calendar.jpg"]
   },
   {
     "id": "phone-holder",
     "title": "Phone Holder",
-    "description": "Created as phone holder to that uses magsafe to charge your phone simultaneously",
+    "description": [
+      {
+        "section": "Description",
+        "text": "A place to put your phone with charging built-in"
+      },
+      {
+        "section": "Goal",
+        "text": "To create a unique marketable product that draws attention while being practical."
+      },
+      {
+        "section": "Process",
+        "text": ""
+      }
+    ],
     "images": ["../assets/images/grade11/phone_holder.jpg"]
   },
   {
     "id": "hotel-packaging",
     "title": "Hotel Packaging",
-    "description": "Created a prototype of a toiletries holder for a hotel",
+    "description": [
+      {
+        "section": "Description",
+        "text": "A toiletries holder designed around a hotel's branding"
+      },
+      {
+        "section": "Goal",
+        "text": "The goal was to create a holder that can be practical but also represent the hotel's image and be a good advertisement."
+      },
+      {
+        "section": "Process",
+        "text": ""
+      }
+    ],
     "images": ["../assets/images/grade11/hotel_packaging.jpg"]
   },
   {
     "id": "lamp",
     "title": "Lamp Model",
-    "description": "Modeled an original lamp in Fusion360",
+    "description": [
+      {
+        "section": "Description",
+        "text": "A 3D modelled custom lamp"
+      },
+      {
+        "section": "Goal",
+        "text": "To create a lamp that has a unique feature or fills a gap in the market."
+      },
+      {
+        "section": "Process",
+        "text": ""
+      }
+    ],
     "images": ["../assets/images/grade10/lamp_plans"]
   },
   {
     "id": "house",
     "title": "House Model",
-    "description": "Modeled a house in Fusion360 with a detailed exterior and rooftop patio",
+    "description": [
+      {
+        "section": "Description",
+        "text": "A 3D modelled house"
+      },
+      {
+        "section": "Goal",
+        "text": "To create a detailed project to show high skill in Fusion360"
+      },
+      {
+        "section": "Process",
+        "text": ""
+      }
+    ],
     "images": [
       "../assets/images/grade10/house_render.png",
       "../assets/images/grade10/house_plans.png"
@@ -88,7 +218,20 @@
   {
     "id": "desk",
     "title": "Desk",
-    "description": "Modeled a house in Fusion 360 with a detailed exterior and rooftop patio",
+    "description": [
+      {
+        "section": "Description",
+        "text": "A 3D modelled custom desk"
+      },
+      {
+        "section": "Goal",
+        "text": "To create a desk designed perfectly for your workflow"
+      },
+      {
+        "section": "Process",
+        "text": ""
+      }
+    ],
     "images": ["../assets/images/grade10/desk_picture.png"]
   }
 ]

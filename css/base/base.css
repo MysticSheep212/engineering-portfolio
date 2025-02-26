@@ -8,7 +8,6 @@
   --background-color-rgb: 51, 51, 51;
   --spacing: 16px;
 }
-
 @font-face {
   font-family: "Proxima Nova";
   src: url("../../assets/fonts/ProximaNovaFont.otf") format("opentype");

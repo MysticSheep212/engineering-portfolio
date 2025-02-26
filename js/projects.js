@@ -17,26 +17,31 @@ document.addEventListener("DOMContentLoaded", function () {
           .map(
             (image, imgIndex) => `
             <a href="#${lightboxId}-${imgIndex}" class="project-info-pictures">
-              <img src="${image}" alt="${project.title} - Image ${
-              imgIndex + 1
-            }" />
+              <img src="${image}" alt="${project.title} - Image ${imgIndex + 1}" />
             </a>
             <div id="${lightboxId}-${imgIndex}" class="lightbox">
               <div class="overlay"></div>
-              <img src="${image}" alt="${project.title} - Image ${
-              imgIndex + 1
-            }">
+              <img src="${image}" alt="${project.title} - Image ${imgIndex + 1}">
             </div>
           `
           )
           .join("");
-        // Join all image elements into one string
 
-        // Store project info with multiple images
+        // Generate description HTML
+        const descriptionHTML = project.description
+          .map(
+            (section) => `
+            <h3>${section.section}</h3>
+            <p>${section.text}</p>
+          `
+          )
+          .join("");
+
+        // Store project info with multiple images and formatted description
         projectInfo[project.id] = `
             <div class="project-info">
               <h2>${project.title}</h2>
-              <p>${project.description}</p>
+              ${descriptionHTML}
               <div class="project-info-pictures-container">${imagesHTML}</div>
             </div>
           `;
