@@ -11,7 +11,7 @@
 
 @font-face {
   font-family: "Proxima Nova";
-  src: url("../../fonts/ProximaNovaFont.otf") format("opentype");
+  src: url("../../assets/fonts/ProximaNovaFont.otf") format("opentype");
 }
 
 body {

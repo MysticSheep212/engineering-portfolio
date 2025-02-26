@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const projectContent = document.getElementById("project-content");
 
     // Fetch project data from JSON file
-    fetch('../project-data.json') // Update the path to your projects.json file
+    fetch('../assets/data/project-data.json') // Update the path to your projects.json file
         .then(response => response.json())
         .then(data => {
             const projectInfo = {};
