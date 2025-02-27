@@ -15,21 +15,20 @@
 
 /* Project showcase section */
 .about-pictures {
-  /* masonry columns */
-  column-count: 3; /* Creates 3 columns */
-  column-gap: 1rem; /* Space between columns */
+  column-count: 3; /* Default: 3 columns */
+  column-gap: 1rem;
   max-width: 100%;
   margin: auto;
-  padding: 1rem; /* Optional: Adds space around the section */
+  padding: 1rem;
 }
 
 .about-pictures img {
-  width: 100%; /* Makes images take full column width */
-  margin-bottom: 1rem; /* Ensures space between images */
-  border-radius: 0.5rem; /* Optional: Rounds corners */
-  display: block; /* Fixes gaps caused by inline-block images */
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  display: block;
+  break-inside: avoid; /* Prevents images from breaking between columns */
 }
-
 
 /* Responsive: Adjust to 2 columns on medium screens */
 @media (max-width: 1024px) {
@@ -38,9 +37,13 @@
   }
 }
 
+/* Mobile view: Adjust to 1 column */
 @media (max-width: 600px) {
   .about-pictures {
     column-count: 1;
   }
-}
 
+  .about-pictures img {
+    width: 100%; /* Ensures full width */
+  }
+}

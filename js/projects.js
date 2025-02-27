@@ -4,71 +4,93 @@ document.addEventListener("DOMContentLoaded", function () {
   const projectDetails = document.getElementById("project-details");
   const projectContent = document.getElementById("project-content");
 
+  // Dynamically add the lightbox HTML to the page
+  const lightboxHTML = `
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+      <div class="overlay"></div>
+      <img id="lightbox-img" src="" alt="Lightbox Image">
+    </div>
+  `;
+  document.body.insertAdjacentHTML('beforeend', lightboxHTML);
+
   fetch("../assets/data/project-data.json")
     .then((response) => response.json())
     .then((data) => {
       const projectInfo = {};
 
+      // Generate HTML for each project
       data.forEach((project) => {
-        const lightboxId = `lightbox-${project.id}`;
-
-        // Generate all images
         let imagesHTML = project.images
           .map(
             (image, imgIndex) => `
-            <a href="#${lightboxId}-${imgIndex}" class="project-info-pictures">
-              <img src="${image}" alt="${project.title} - Image ${imgIndex + 1}" />
-            </a>
-            <div id="${lightboxId}-${imgIndex}" class="lightbox">
-              <div class="overlay"></div>
-              <img src="${image}" alt="${project.title} - Image ${imgIndex + 1}">
-            </div>
-          `
+              <div class="project-info-pictures" onclick="openLightbox('${image}')">
+                <img src="${image}" alt="${project.title} - Image ${imgIndex + 1}" />
+              </div>
+            `
           )
           .join("");
 
-        // Generate description HTML
         const descriptionHTML = project.description
           .map(
             (section) => `
-            <h3>${section.section}</h3>
-            <p>${section.text}</p>
-          `
+              <h3>${section.section}</h3>
+              <p>${section.text}</p>
+            `
           )
           .join("");
 
-        // Store project info with multiple images and formatted description
         projectInfo[project.id] = `
-            <div class="project-info">
-              <h2>${project.title}</h2>
-              ${descriptionHTML}
-              <div class="project-info-pictures-container">${imagesHTML}</div>
-            </div>
-          `;
+          <div class="project-info">
+            <h2>${project.title}</h2>
+            ${descriptionHTML}
+            <div class="project-info-pictures-container">${imagesHTML}</div>
+          </div>
+        `;
       });
 
-      // Set up event listeners for project items
+      // Add event listeners for each project
       projects.forEach((project) => {
         project.addEventListener("click", function () {
           const projectKey = this.getAttribute("data-project");
 
-          // Show project details and hide project list
           projectsList.style.display = "none";
           projectDetails.style.display = "block";
           projectContent.innerHTML =
             projectInfo[projectKey] || "<p>Project not found.</p>";
 
-          window.scrollTo(0, 0); // Scroll to the top
+          window.scrollTo(0, 0);
           history.pushState({ projectKey: projectKey }, "", "");
         });
+      });
+
+      // Handle back button functionality
+      window.addEventListener("popstate", function () {
+        projectsList.style.display = "block";
+        projectDetails.style.display = "none";
+        projectContent.innerHTML = "";
       });
     })
     .catch((error) => console.error("Error fetching project data:", error));
 
-  // Handle back button functionality
-  window.addEventListener("popstate", function () {
-    projectsList.style.display = "block";
-    projectDetails.style.display = "none";
-    projectContent.innerHTML = "";
+  // Lightbox functionality
+  window.openLightbox = function (imageSrc) {
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+
+    if (lightbox && lightboxImg) {
+      lightboxImg.src = imageSrc;
+      lightbox.style.display = "flex";
+    }
+  };
+
+  window.closeLightbox = function () {
+    document.getElementById("lightbox").style.display = "none";
+  };
+
+  // Close lightbox when pressing "Escape"
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
+      closeLightbox();
+    }
   });
 });
