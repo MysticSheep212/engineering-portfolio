@@ -23,8 +23,13 @@
 @media (max-width: 768px) {
   .project-section {
     flex-direction: column;
-    width: 90%;
+    width: 100%;
     align-items: center;
+  }
+
+  .project-subheader {
+    font-size: 1.25rem;
+    padding: 0 1rem;
   }
 
   .project-pictures {

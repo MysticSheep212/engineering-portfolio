@@ -17,16 +17,14 @@ main {
   margin: 20px auto;
 }
 
-/* Parallax Effect */
+/* Default (Desktop) Parallax Effect */
 .parallax {
   position: relative;
   width: 100%;
-  height: 110vh;
-  /* Full screen height */
+  height: 110vh; /* Full screen height */
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
-  /* This is the key for parallax */
+  background-attachment: fixed; /* Works on desktop */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,6 +33,7 @@ main {
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
+  padding: 2rem;
 }
 
 /* Dark overlay */
@@ -45,7 +44,7 @@ main {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.25); /* Adjust opacity for darkness */
+  background: rgba(0, 0, 0, 0.25); /* Adjust opacity */
   z-index: 1; /* Ensures it overlays the background */
 }
 
@@ -54,6 +53,34 @@ main {
   position: relative;
   z-index: 2;
 }
+
+/* Disable parallax effect on mobile */
+@media (max-width: 768px) {
+  .parallax {
+    background: none; /* Remove background image */
+    height: auto;
+    min-height: 20vh;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 85%;
+    background-size: contain; /* Ensures full image is visible */
+    background-position: center top; /* Adjust positioning */
+    background-attachment: scroll; /* Prevents parallax effect */
+
+  }
+  .parallax img {
+    visibility: hidden;
+  }
+
+  .parallax h2 {
+    font-size: 1.5rem; /* Slightly smaller text */
+    margin-top: 1rem;
+  }
+}
+
 /* Assigning Different Background Images */
 #home-img1 {
   background-image: url("../../assets/images/grade11/sumobot.jpeg");
@@ -89,13 +116,13 @@ main {
   background-image: url("../../assets/images/grade11/dream_apartment_render.png");
 }
 #g11-img4 {
-  background-image: url("../../assets/images/grade11/rotating-calendar.jpg");
+  background-image: url("../../assets/images/grade11/rotating_calendar_wide.jpg");
 }
 #g11-img5 {
-  background-image: url("../../assets/images/grade11/phone-holder.jpg");
+  background-image: url("../../assets/images/grade11/phone_holder_music_display_2.jpg");
 }
 #g11-img6 {
-  background-image: url("../../assets/images/grade11/hotel-packaging.jpg");
+  background-image: url("../../assets/images/grade11/luxor_packaging.jpg");
 }
 
 #g12-img1 {

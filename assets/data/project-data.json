@@ -134,7 +134,10 @@
         "text": ""
       }
     ],
-    "images": ["../assets/images/grade11/rotating_calendar.jpg"]
+    "images": [
+      "../assets/images/grade11/rotating_calendar_vertical.jpg",
+      "../assets/images/grade11/rotating_calendar_paperwork.jpg"
+    ]
   },
   {
     "id": "phone-holder",
@@ -153,7 +156,12 @@
         "text": ""
       }
     ],
-    "images": ["../assets/images/grade11/phone_holder.jpg"]
+    "images": [
+      "../assets/images/grade11/phone_holder_music_display_1.jpg",
+      "../assets/images/grade11/phone_holder_music_display_2.jpg",
+      "../assets/images/grade11/phone_holder_1.jpg",
+      "../assets/images/grade11/phone_holder_time_display.jpg"
+  ]
   },
   {
     "id": "hotel-packaging",
@@ -172,7 +180,7 @@
         "text": ""
       }
     ],
-    "images": ["../assets/images/grade11/hotel_packaging.jpg"]
+    "images": ["../assets/images/grade11/luxor_packaging.jpg"]
   },
   {
     "id": "lamp",
@@ -191,7 +199,7 @@
         "text": ""
       }
     ],
-    "images": ["../assets/images/grade10/lamp_plans"]
+    "images": ["../assets/images/grade10/lamp_plans.png"]
   },
   {
     "id": "house",
