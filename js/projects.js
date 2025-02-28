@@ -4,15 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const projectDetails = document.getElementById("project-details");
   const projectContent = document.getElementById("project-content");
 
-  // Dynamically add the lightbox HTML to the page
-  const lightboxHTML = `
-    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
-      <div class="overlay"></div>
-      <img id="lightbox-img" src="" alt="Lightbox Image">
-    </div>
-  `;
-  document.body.insertAdjacentHTML('beforeend', lightboxHTML);
-
+  // Fetch project data from JSON file
   fetch("../assets/data/project-data.json")
     .then((response) => response.json())
     .then((data) => {
@@ -23,8 +15,10 @@ document.addEventListener("DOMContentLoaded", function () {
         let imagesHTML = project.images
           .map(
             (image, imgIndex) => `
-              <div class="project-info-pictures" onclick="openLightbox('${image}')">
-                <img src="${image}" alt="${project.title} - Image ${imgIndex + 1}" />
+              <div class="project-info-pictures" data-image="${image}">
+                <img src="${image}" alt="${project.title} - Image ${
+              imgIndex + 1
+            }" />
               </div>
             `
           )
@@ -63,6 +57,15 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       });
 
+      // Event Delegation for Lightbox Clicks
+      projectContent.addEventListener("click", function (event) {
+        const target = event.target.closest(".project-info-pictures");
+        if (target) {
+          const imageSrc = target.getAttribute("data-image");
+          openLightbox(imageSrc);
+        }
+      });
+
       // Handle back button functionality
       window.addEventListener("popstate", function () {
         projectsList.style.display = "block";
@@ -71,26 +74,4 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     })
     .catch((error) => console.error("Error fetching project data:", error));
-
-  // Lightbox functionality
-  window.openLightbox = function (imageSrc) {
-    const lightbox = document.getElementById("lightbox");
-    const lightboxImg = document.getElementById("lightbox-img");
-
-    if (lightbox && lightboxImg) {
-      lightboxImg.src = imageSrc;
-      lightbox.style.display = "flex";
-    }
-  };
-
-  window.closeLightbox = function () {
-    document.getElementById("lightbox").style.display = "none";
-  };
-
-  // Close lightbox when pressing "Escape"
-  document.addEventListener("keydown", function (event) {
-    if (event.key === "Escape") {
-      closeLightbox();
-    }
-  });
 });

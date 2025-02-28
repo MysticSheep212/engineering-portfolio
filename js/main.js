@@ -62,7 +62,8 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
   }
-  // install toast
+
+  // Install toast (for PWA installation)
   let deferredPrompt;
 
   window.addEventListener("beforeinstallprompt", (e) => {
@@ -101,5 +102,25 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("install-toast").style.display = "none"; // Hide the toast after installation
       });
     }
+  });
+
+  // Lightbox functionality for images
+  const lightboxes = document.querySelectorAll('.lightbox');
+  lightboxes.forEach(lightbox => {
+    const img = lightbox.querySelector('img');
+    lightbox.addEventListener('click', () => {
+      lightbox.classList.remove('show');
+    });
+  });
+
+  // Open the lightbox when clicking on images
+  const imgLinks = document.querySelectorAll('.about-pictures a');
+  imgLinks.forEach(link => {
+    link.addEventListener('click', (event) => {
+      event.preventDefault();
+      const lightboxId = link.getAttribute('href');
+      const lightbox = document.querySelector(lightboxId);
+      lightbox.classList.add('show');
+    });
   });
 });

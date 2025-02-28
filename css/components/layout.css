@@ -4,17 +4,28 @@ body {
   align-items: center;
   background-color: #333;
   color: white;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+html {
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+* {
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
 main {
   padding: 1rem;
   text-align: left;
   width: 95%;
+  max-width: 100%; /* Ensure main does not exceed 100% width */
 }
 
 .container {
   width: 80%;
   margin: 20px auto;
+  max-width: 100%; /* Ensure container does not exceed 100% width */
 }
 
 /* Default (Desktop) Parallax Effect */
@@ -34,6 +45,7 @@ main {
   font-size: 2rem;
   font-weight: bold;
   padding: 2rem;
+  max-width: 100%; /* Ensure parallax does not exceed 100% width */
 }
 
 /* Dark overlay */
@@ -69,7 +81,6 @@ main {
     background-size: contain; /* Ensures full image is visible */
     background-position: center top; /* Adjust positioning */
     background-attachment: scroll; /* Prevents parallax effect */
-
   }
   .parallax img {
     visibility: hidden;

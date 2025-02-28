@@ -28,6 +28,7 @@
   height: 75px;
   object-fit: contain;
 }
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .skills {

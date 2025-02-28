@@ -1,3 +1,4 @@
+/* General styles for the lightbox */
 .lightbox {
   display: none;
   position: fixed;
@@ -8,6 +9,7 @@
   height: 100%;
   justify-content: center;
   align-items: center;
+  transition: opacity 0.3s ease;
 }
 
 .overlay {
@@ -17,10 +19,19 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
+  z-index: 5;
+  cursor: pointer;
 }
 
 .lightbox img {
   max-width: 90%;
   max-height: 90%;
   z-index: 10;
+  transition: transform 0.3s ease;
+}
+
+/* Active lightbox state (for smooth appearance) */
+.lightbox.show {
+  display: flex;
+  opacity: 1;
 }

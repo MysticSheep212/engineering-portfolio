@@ -35,4 +35,5 @@
   margin-bottom: 1rem; /* Ensures space between images */
   border-radius: 0.5rem; /* Optional: Rounds corners */
   display: block; /* Fixes gaps caused by inline-block images */
+  cursor: pointer;
 }
