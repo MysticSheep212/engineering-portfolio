@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // Makes the navmenu change transparency as you scroll
   window.addEventListener("scroll", () => {
     if (window.scrollY > 270) {
-      // Change this value to adjust when transparency changes
       navbar.classList.add("scrolled");
     } else {
       navbar.classList.remove("scrolled");
@@ -26,11 +25,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Function to handle smooth scroll on external/internal links
   const handleSmoothScroll = (event) => {
-    const targetId = event.target.getAttribute("href").substring(1); // Extract the target ID from href
+    const targetId = event.target.getAttribute("href").substring(1);
     const target = document.querySelector(`#${targetId}`);
 
     if (target) {
-      event.preventDefault(); // Prevent default jump behavior
+      event.preventDefault();
       const offset = window.innerHeight / 2 - target.offsetHeight / 2;
       window.scrollTo({
         top: target.offsetTop - offset,
@@ -52,7 +51,6 @@ document.addEventListener("DOMContentLoaded", () => {
   if (window.location.hash === "#about") {
     const target = document.querySelector("#about");
     if (target) {
-      // Ensure it runs after page load
       window.addEventListener("load", () => {
         window.scrollTo({
           top:
@@ -63,25 +61,29 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // Install toast (for PWA installation)
+  // Install toast (for PWA installation) - Only show on mobile
   let deferredPrompt;
 
+  function isMobile() {
+    return /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+  }
+
   window.addEventListener("beforeinstallprompt", (e) => {
-    e.preventDefault(); // Prevent the default browser install prompt
-    deferredPrompt = e; // Save the event for later use
-    showInstallToast(); // Show the custom toast
+    e.preventDefault();
+    deferredPrompt = e;
+    if (isMobile()) {
+      showInstallToast();
+    }
   });
 
   function showInstallToast() {
     const toast = document.getElementById("install-toast");
     toast.style.display = "block";
 
-    // Fade in the toast
     setTimeout(() => {
       toast.style.opacity = "1";
     }, 100);
 
-    // Auto-hide after 5 seconds
     setTimeout(() => {
       toast.style.opacity = "0";
       setTimeout(() => {
@@ -92,35 +94,32 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.getElementById("install-toast-btn").addEventListener("click", () => {
     if (deferredPrompt) {
-      // Show the install prompt
       deferredPrompt.prompt();
       deferredPrompt.userChoice.then((choiceResult) => {
-        if (choiceResult.outcome === "accepted") {
-          console.log("PWA Installed");
-        }
+        console.log("PWA Install:", choiceResult.outcome);
         deferredPrompt = null;
-        document.getElementById("install-toast").style.display = "none"; // Hide the toast after installation
+        document.getElementById("install-toast").style.display = "none";
       });
     }
   });
 
   // Lightbox functionality for images
-  const lightboxes = document.querySelectorAll('.lightbox');
-  lightboxes.forEach(lightbox => {
-    const img = lightbox.querySelector('img');
-    lightbox.addEventListener('click', () => {
-      lightbox.classList.remove('show');
+  const lightboxes = document.querySelectorAll(".lightbox");
+  lightboxes.forEach((lightbox) => {
+    const img = lightbox.querySelector("img");
+    lightbox.addEventListener("click", () => {
+      lightbox.classList.remove("show");
     });
   });
 
   // Open the lightbox when clicking on images
-  const imgLinks = document.querySelectorAll('.about-pictures a');
-  imgLinks.forEach(link => {
-    link.addEventListener('click', (event) => {
+  const imgLinks = document.querySelectorAll(".about-pictures a");
+  imgLinks.forEach((link) => {
+    link.addEventListener("click", (event) => {
       event.preventDefault();
-      const lightboxId = link.getAttribute('href');
+      const lightboxId = link.getAttribute("href");
       const lightbox = document.querySelector(lightboxId);
-      lightbox.classList.add('show');
+      lightbox.classList.add("show");
     });
   });
 });
