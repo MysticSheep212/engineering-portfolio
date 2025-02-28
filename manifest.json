@@ -8,7 +8,20 @@
   "icons": [
     {
       "src": "./assets/icons/site_icon.png",
-      "sizes": "192x192", 
+      "sizes": "225x225",
+      "type": "image/png"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/assets/screenshots/screenshot1.png",
+      "sizes": "429x932",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/assets/screenshots/screenshot2.png",
+      "sizes": "1920x1080",
       "type": "image/png"
     }
   ]
