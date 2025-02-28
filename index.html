@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dylan's Engineering Portfolio</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="manifest" href="/manifest.json" />
   </head>
 
   <body>
@@ -15,8 +16,43 @@
       <a href="html/projects.html">Projects</a>
       <a href="html/about-me.html" class="name-top-right">Dylan Le Voguer</a>
     </nav>
-
     <header>
+      <div
+        id="install-toast"
+        style="
+          display: none;
+          position: fixed;
+          bottom: 20px;
+          left: 50%;
+          transform: translateX(-50%);
+          background: rgba(0, 0, 0, 0.9);
+          color: white;
+          padding: 12px 20px;
+          border-radius: 8px;
+          font-size: 14px;
+          text-align: center;
+          z-index: 1000;
+          opacity: 0;
+          transition: opacity 0.5s ease-in-out;
+        "
+      >
+        📲 Install this app for a better experience!
+        <button
+          id="install-toast-btn"
+          style="
+            margin-left: 10px;
+            background: #fff;
+            color: #000;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+          "
+        >
+          Install
+        </button>
+      </div>
+
       <h1>Dylan Le Voguer</h1>
       <hr class="header-divider" />
       <h1>Engineering & Design Portfolio</h1>
@@ -26,17 +62,17 @@
       <div class="about-content">
         <p>
           Throughout my time at Port Moody Secondary School, I took numerous
-          engineering and design-oriented courses, such as Drafting and Design 11-12
-          and Engineering 11-12. Through these courses, I created numerous projects,
-          all of which are showcased on this website.
+          engineering and design-oriented courses, such as Drafting and Design
+          11-12 and Engineering 11-12. Through these courses, I created numerous
+          projects, all of which are showcased on this website.
         </p>
         <p>
-          The purpose of this website is to showcase these projects as a portfolio
-          of everything I have made over my four years at PMSS.
+          The purpose of this website is to showcase these projects as a
+          portfolio of everything I have made over my four years at PMSS.
         </p>
       </div>
     </div>
-    
+
     <div class="parallax" id="home-img1">
       <h2>Sumobot</h2>
     </div>
@@ -46,6 +82,7 @@
     <div class="parallax" id="home-img3">
       <h2>House Model</h2>
     </div>
+
     <script src="js/cursor.js"></script>
     <script src="js/main.js"></script>
   </body>

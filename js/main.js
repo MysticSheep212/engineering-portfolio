@@ -62,4 +62,44 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
   }
+  // install toast
+  let deferredPrompt;
+
+  window.addEventListener("beforeinstallprompt", (e) => {
+    e.preventDefault(); // Prevent the default browser install prompt
+    deferredPrompt = e; // Save the event for later use
+    showInstallToast(); // Show the custom toast
+  });
+
+  function showInstallToast() {
+    const toast = document.getElementById("install-toast");
+    toast.style.display = "block";
+
+    // Fade in the toast
+    setTimeout(() => {
+      toast.style.opacity = "1";
+    }, 100);
+
+    // Auto-hide after 5 seconds
+    setTimeout(() => {
+      toast.style.opacity = "0";
+      setTimeout(() => {
+        toast.style.display = "none";
+      }, 500);
+    }, 5000);
+  }
+
+  document.getElementById("install-toast-btn").addEventListener("click", () => {
+    if (deferredPrompt) {
+      // Show the install prompt
+      deferredPrompt.prompt();
+      deferredPrompt.userChoice.then((choiceResult) => {
+        if (choiceResult.outcome === "accepted") {
+          console.log("PWA Installed");
+        }
+        deferredPrompt = null;
+        document.getElementById("install-toast").style.display = "none"; // Hide the toast after installation
+      });
+    }
+  });
 });
