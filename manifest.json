@@ -1,7 +1,7 @@
 {
   "name": "Dylan's Engineering Portfolio",
   "short_name": "Dylan's Portfolio",
-  "start_url": "./index.html",
+  "start_url": "https://mysticsheep212.github.io/engineering-portfolio/index.html",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#000000",
