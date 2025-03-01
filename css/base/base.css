@@ -1,6 +1,6 @@
 /* styles.css or base.css */
 :root {
-  --primary-color: #444; 
+  --primary-color: #444;
   --primary-color-rgb: 68, 68, 68;
   --hover-color: #424242;
   --hover-color-rgb: 66, 66, 66;
@@ -16,6 +16,7 @@
 body {
   font-family: "Proxima Nova", Arial, sans-serif;
   margin: 0;
+  text-shadow: black 0.1rem 0.25rem 10px;
 }
 
 h1,
