@@ -46,6 +46,7 @@ main {
   font-weight: bold;
   padding: 2rem;
   max-width: 100%; /* Ensure parallax does not exceed 100% width */
+  text-decoration: none;
 }
 
 /* Dark overlay */
