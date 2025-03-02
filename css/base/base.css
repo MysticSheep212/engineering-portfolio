@@ -47,5 +47,6 @@ h6 {
     position: relative;
     width: 100%;
     height: 100%;
+    text-shadow: gray 0.1rem 0.25rem 10px;
   }
 }
