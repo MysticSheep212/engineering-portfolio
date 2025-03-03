@@ -15,12 +15,6 @@ html {
   box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
-main {
-  padding: 1rem;
-  text-align: left;
-  width: 95%;
-  max-width: 100%; /* Ensure main does not exceed 100% width */
-}
 
 .container {
   width: 80%;

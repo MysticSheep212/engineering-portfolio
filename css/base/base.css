@@ -18,6 +18,13 @@ body {
   text-shadow: black 0.1rem 0.25rem 10px;
 }
 
+main {
+  padding: 1rem;
+  text-align: left;
+  width: 95%;
+  max-width: 100%; /* Ensure main does not exceed 100% width */
+}
+
 h1,
 h2,
 h3,
