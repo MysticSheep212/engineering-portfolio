@@ -1,21 +1,3 @@
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #333;
-  color: white;
-  overflow-x: hidden; /* Prevent horizontal overflow */
-}
-
-html {
-  overflow-x: hidden; /* Prevent horizontal overflow */
-}
-
-* {
-  box-sizing: border-box; /* Include padding and border in element's total width and height */
-}
-
-
 .container {
   width: 80%;
   margin: 20px auto;
@@ -87,7 +69,7 @@ html {
   }
 }
 
-/* Assigning Different Background Images */
+/* Assigning Different Background Images for Parallax*/
 #home-img1 {
   background-image: url("../../assets/images/grade11/sumobot.jpeg");
 }
