@@ -5,7 +5,8 @@
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  min-width: 90%;
+  margin: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .about h2 {

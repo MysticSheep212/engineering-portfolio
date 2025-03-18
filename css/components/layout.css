@@ -70,17 +70,8 @@
 }
 
 /* Assigning Different Background Images for Parallax*/
-#home-img1 {
-  background-image: url("../../assets/images/grade11/sumobot.jpeg");
-}
 
-#home-img2 {
-  background-image: url("../../assets/images/grade12/hydraulic_gearbot_wide.png");
-}
-
-#home-img3 {
-  background-image: url("../../assets/images/grade10/house_render_wide.png");
-}
+/* Engineering & Design Images */
 
 #g10-img1 {
   background-image: url("../../assets/images/grade10/lamp_plans.png");
@@ -119,6 +110,28 @@
 
 #g12-img2 {
   background-image: url("../../assets/images/grade12/marblerun.jpg");
+}
+/* Programming Images */
+/* java */
+#java-calc {
+  background-image: url("../../assets/images/programming/java/calc.png");
+}
+#java-blackjack {
+  background-image: url("../../assets/images/programming/java/blackjack.png");
+}
+#java-wordle {
+  background-image: url("../../assets/images/programming/java/wordle.png");
+}
+/* Python */
+#python-dmoj {
+  background-image: url("../../assets/images/programming/python/dmoj1.png");
+}
+#python-turtle {
+  background-image: url("../../assets/images/programming/python/turtle1.png");
+}
+/* gd script */
+#godot-peng {
+  background-image: url("../../assets/images/programming/godot/peng1.png");
 }
 
 /* Caption Styling */
