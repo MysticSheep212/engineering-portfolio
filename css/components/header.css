@@ -1,13 +1,14 @@
 nav {
   width: 100%;
   background-color: var(--background-color);
-  overflow: hidden;
+  overflow: visible; /* Ensure dropdown content is not clipped */
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
   /* Smooth transition for background color */
   transition: background-color 0.3s ease;
+  position: relative; /* Ensure dropdowns are positioned correctly */
 }
 
 nav.scrolled {
@@ -34,6 +35,55 @@ nav a:hover {
 
 nav.scrolled a:hover {
   background-color: rgba(var(--hover-color-rgb), 0.25); /* 25% opacity of hover color*/
+}
+
+.dropdown {
+  float: left;
+  overflow: visible; /* Ensure dropdown content is not clipped */
+  position: relative; /* Ensure dropdown content is positioned correctly */
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--background-color);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  top: 100%; /* Position the dropdown content below the button */
+  left: 0; /* Align dropdown content to the left */
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--hover-color);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: var(--hover-color);
 }
 
 header {
