@@ -28,6 +28,7 @@
   max-height: 90%;
   z-index: 10;
   transition: transform 0.3s ease;
+  border-radius: 0.25rem;
 }
 
 /* Active lightbox state (for smooth appearance) */
